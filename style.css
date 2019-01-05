@@ -1,0 +1,668 @@
+body {
+    margin: 0;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    z-index: 1;
+    border: none;
+    background-color: rgba(239, 132, 115, 0.47);
+    color: black;
+    cursor: pointer;
+    margin: 0.5vw 1vw;
+    padding: 0.5vw 1vw 0.7vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    font-family: "assistantextralight";
+}
+
+#myBtn:hover {
+    background-color: rgba(239, 132, 115, 0.76);
+    /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width:628px) {
+
+    #myBtn {
+        display: none;
+    }
+}
+
+/*---- FONTS ----*/
+
+@font-face {
+    font-family: 'de_valenciaregular';
+    src: url('font/de_valencia_beta-webfont.woff2') format('woff2'),
+        url('font/de_valencia_beta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'assistantbold';
+    src: url('font/assistant-bold-webfont.woff2') format('woff2'),
+        url('font/assistant-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'assistantextrabold';
+    src: url('font/assistant-extrabold-webfont.woff2') format('woff2'),
+        url('font/assistant-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'assistantextralight';
+    src: url('font/assistant-extralight-webfont.woff2') format('woff2'),
+        url('font/assistant-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'assistantlight';
+    src: url('font/assistant-light-webfont.woff2') format('woff2'),
+        url('font/assistant-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'assistantregular';
+    src: url('font/assistant-regular-webfont.woff2') format('woff2'),
+        url('font/assistant-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'assistantsemibold';
+    src: url('font/assistant-semibold-webfont.woff2') format('woff2'),
+        url('font/assistant-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*----EFFEKTER----*/
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_out_kf {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*---- FORSIDE -----*/
+
+#forside {
+    /*    margin: 1vw 10vw 0;*/
+    position: absolute;
+}
+
+#forside img {
+    position: absolute;
+    width: 100vw;
+    opacity: 0.85;
+}
+
+#baggrund {
+    margin: 5.5vw 9vw;
+    padding: 11.5vw 5vw;
+    position: relative;
+    justify-content: center;
+    background-color: rgba(142, 136, 136, 0.71);
+    border: solid #6C54A6 0.3vw;
+    cursor: ne-resize;
+    /* ELLER cursor: pointer;*/
+}
+
+#baggrund img {
+    position: absolute;
+    top: 2vw;
+    left: 30vw;
+    width: 25%;
+}
+
+#baggrund h1 {
+    margin: auto;
+    position: relative;
+    top: 12.5vw;
+    height: 8vw;
+    font-size: 4vw;
+    color: white;
+    font-family: de_valenciaregular;
+    /*    ELLER font-family: assistantextralight;*/
+    font-weight: 300;
+}
+
+.image_mobil {
+    display: none;
+}
+
+@media only screen and (max-width:628px) {
+
+    .image_desktop {
+        display: none;
+    }
+
+    .image_mobil {
+        display: inline;
+    }
+
+    #baggrund {
+        width: 70vw;
+        height: 62vw;
+        margin: 10.6vw 9vw;
+    }
+
+    #baggrund img {
+        width: 40%;
+        left: 25vw;
+    }
+
+    #baggrund h1 {
+        font-size: 1.8rem;
+        top: 27vw;
+        height: 13vw;
+        text-align: center;
+    }
+
+}
+
+/*---- HEADER/MENU ----*/
+
+
+header {
+    background-color: whitesmoke;
+    position: relative;
+    height: 20vw;
+    width: 100%;
+}
+
+#forside_baggrund {
+    position: absolute;
+    height: 20vw;
+}
+
+#forside_baggrund img {
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    opacity: 0.85;
+}
+
+/* ELLER #portraet {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 10vw;
+    left: 42.56vw;
+
+}
+
+#portraet img {
+    width: 100%;
+    border-radius: 0.5vw;
+} */
+
+#portraet {
+    cursor: pointer;
+}
+
+#portraet h1 {
+    position: absolute;
+    left: 42.56vw;
+    top: 16.5vw;
+    font-size: 3vw;
+    font-family: de_valenciaregular;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+#portraet h2 {
+    position: absolute;
+    left: 42.56vw;
+    top: 20vw;
+    font-size: 3vw;
+    font-family: de_valenciaregular;
+    text-align: center;
+    margin: 0;
+}
+
+.forside_knap {
+    cursor: pointer;
+}
+
+nav {
+    position: sticky;
+    top: 1vw;
+}
+
+#forside_menu {
+    width: 30vw;
+    position: relative;
+    left: 58vw;
+    margin-top: 5vw;
+    padding: 0vw 5vw 6vw;
+
+}
+
+#forside_menu p1 {
+    position: absolute;
+    font-size: 3vw;
+    font-family: de_valenciaregular;
+    text-decoration: underline;
+    font-weight: 100;
+
+}
+
+.projekter_knap {
+    cursor: pointer;
+}
+
+#forside_menu p2 {
+    position: absolute;
+    left: 30vw;
+    font-size: 3vw;
+    font-family: de_valenciaregular;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.om_mig_knap {
+    cursor: pointer;
+}
+
+.hidden {
+    transform: translateX(115%);
+    /*   ELLER opacity: 0;*/
+}
+
+#burger_menu {
+    margin-right: 3vw;
+}
+
+#burgermenu {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+    color: #4162FC;
+    /*   ELLER transform: rotate(90deg);*/
+}
+
+#menu {
+    position: absolute;
+    left: 65vw;
+    text-align: right;
+    list-style-type: none;
+    transition: transform 1s;
+    font-family: "de_valenciaregular";
+    font-size: 6vw;
+    color: #4162FC;
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 0vw;
+    border-radius: 0.5vw;
+    /*  ELLER  transition: opacity 0.5s;*/
+}
+
+#menu li:hover {
+    color: #6C54A6;
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+#menu li {
+    position: relative;
+}
+
+@media only screen and (max-width:628px) {
+    #forside_menu {
+        display: none;
+    }
+
+    #portraet h1 {
+        font-size: 10vw;
+        top: 9vw;
+        left: 29vw;
+    }
+
+    #portraet h2 {
+        font-size: 10vw;
+        top: 19vw;
+        left: 29vw;
+    }
+}
+
+@media only screen and (min-width:628px) {
+    #burger_menu {
+        display: none;
+    }
+}
+
+/*---- PROJEKTER ----*/
+
+
+#vaelg_tema {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#vaelg_tema .tema:hover .tema_tekst1,
+#vaelg_tema .tema:hover .tema_tekst2,
+#vaelg_tema .tema:hover .tema_tekst3,
+#vaelg_tema .tema:hover .tema_tekst4 {
+    opacity: 1;
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
+#vaelg_tema .tema:hover img {
+    opacity: 0.4;
+    transition: transform 0.5s;
+    transform: scale(1.1);
+}
+
+.tema {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 20vw;
+    margin: 0vw 1vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.tema img {
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 0.5vw;
+}
+
+.tema_tekst1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tema_tekst2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tema_tekst3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tema_tekst4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#vaelg_tema .tema h1 {
+    font-family: "assistantextralight";
+    font-size: 1.7vw;
+    background-color: rgba(65, 98, 252, 0.87);
+    border-radius: 0.5vw;
+}
+
+@media only screen and (max-width:628px) {
+
+    #projekter h1 {
+        font-size: 2rem;
+        margin: 0vw;
+    }
+
+
+    #vaelg_tema .tema h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .tema {
+        margin: 2vw 2vw;
+        flex-basis: 172px;
+    }
+}
+
+/*---- OM MIG ----*/
+
+
+
+/*
+#om_mig h1 {
+    font-family: "de_valenciaregular";
+    font-size: 3vw;
+    text-decoration: overline;
+    margin: 2vw 2vw 1vw;
+}
+*/
+
+.valgt_side {
+    font-family: "de_valenciaregular";
+    font-size: 3vw;
+    text-decoration: overline;
+    margin: 2vw 2vw 1vw;
+}
+
+.om_mig_boks {
+    display: flex;
+}
+
+.om_mig_tekst {
+    margin: 2vw 2vw 1vw 5vw;
+    max-width: 120vw;
+}
+
+.om_mig_tekst2 {
+    flex-basis: 600px;
+    margin: 2vw 2vw 1vw 5vw;
+    max-width: 120vw;
+}
+
+.om_mig_tekst p {
+    font-family: "assistantextralight";
+    font-size: 1.7vw;
+
+}
+
+.om_mig_tekst2 li {
+    font-family: "assistantextralight";
+    font-size: 1.7vw;
+    line-height: 1.5;
+    list-style: circle;
+}
+
+.om_mig_tekst2 p2 {
+    font-family: "assistantsemibold";
+}
+
+.om_mig_billede {
+    margin: 2vw 4vw 1vw 0vw;
+
+}
+
+.om_mig_billede img {
+    width: 100%;
+
+}
+
+
+
+@media only screen and (max-width:628px) {
+
+
+    #om_mig h1 {
+
+        font-size: 2rem;
+        margin: 0vw;
+    }
+
+    .om_mig_boks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #om_mig p {
+        font-size: 1.1rem;
+    }
+
+    #om_mig li {
+        font-size: 1.1rem;
+    }
+
+    .om_mig_tekst2 {
+        margin: 1vw 2vw 0vw 2vw;
+    }
+
+    .om_mig_billede {
+        margin: 2vw;
+    }
+
+    .om_mig_billede img {
+        width: 100%;
+
+    }
+
+}
+
+/*---- GRUNDLÆGGENDE TEMAFORLØB STYLING ----*/
+
+
+.overskrift h1 {
+    font-family: "assistantextralight";
+    font-size: 3vw;
+    margin: 2vw 2vw 1vw;
+}
+
+.forklaring_af_opgave {
+    flex-basis: 200px;
+    display: flex;
+}
+
+
+.opgave_info {
+    flex-grow: 1;
+    margin: 2vw 1vw 1vw;
+}
+
+.opgave_info h1 {
+    font-family: "assistantextralight";
+    font-size: 1.5rem;
+}
+
+.opgave_info p {
+    font-family: "assistantextralight";
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width:628px) {
+
+    .forklaring_af_opgave {
+        flex-wrap: wrap;
+    }
+
+    .overskrift h1 {
+        font-size: 2rem;
+        margin: 1vw;
+    }
+}
