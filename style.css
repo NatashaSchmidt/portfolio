@@ -197,7 +197,7 @@ body {
     height: 8vw;
     font-size: 4vw;
     color: white;
-    font-family: de_valenciaregular;
+    font-family: "de_valenciaregular";
     /*    ELLER font-family: assistantextralight;*/
     font-weight: 300;
 }
@@ -281,7 +281,7 @@ header {
     left: 42.56vw;
     top: 16.5vw;
     font-size: 3vw;
-    font-family: de_valenciaregular;
+    font-family: "de_valenciaregular";
     color: white;
     text-align: center;
     margin: 0;
@@ -292,7 +292,7 @@ header {
     left: 42.56vw;
     top: 20vw;
     font-size: 3vw;
-    font-family: de_valenciaregular;
+    font-family: "de_valenciaregular";
     text-align: center;
     margin: 0;
 }
@@ -315,26 +315,38 @@ nav {
 
 }
 
-#forside_menu p1 {
+#forside_menu h1 {
     position: absolute;
     font-size: 3vw;
-    font-family: de_valenciaregular;
+    font-family: "de_valenciaregular";
     text-decoration: underline;
     font-weight: 100;
 
+}
+
+#forside_menu h1:hover {
+    color: #4162FC;
+    transition: transform 0.5s;
+    transform: scale(1.05);
 }
 
 .projekter_knap {
     cursor: pointer;
 }
 
-#forside_menu p2 {
+#forside_menu h2 {
     position: absolute;
     left: 30vw;
     font-size: 3vw;
-    font-family: de_valenciaregular;
+    font-family: "de_valenciaregular";
     text-decoration: underline;
     font-weight: 100;
+}
+
+#forside_menu h2:hover {
+    color: #4162FC;
+    transition: transform 0.5s;
+    transform: scale(1.05);
 }
 
 .om_mig_knap {
@@ -359,8 +371,11 @@ nav {
 }
 
 #menu {
+    /* ELLER
     position: absolute;
     left: 65vw;
+*/
+
     text-align: right;
     list-style-type: none;
     transition: transform 1s;
@@ -368,7 +383,6 @@ nav {
     font-size: 6vw;
     color: #4162FC;
     background-color: rgba(255, 255, 255, 0.89);
-    padding: 0vw;
     border-radius: 0.5vw;
     /*  ELLER  transition: opacity 0.5s;*/
 }
@@ -380,8 +394,9 @@ nav {
 }
 
 #menu li {
-    position: relative;
+    /*     ELLER position: relative;*/
 }
+
 
 @media only screen and (max-width:628px) {
     #forside_menu {
@@ -571,7 +586,7 @@ nav {
     list-style: circle;
 }
 
-.om_mig_tekst2 p2 {
+.fed {
     font-family: "assistantsemibold";
 }
 
@@ -633,6 +648,28 @@ nav {
     margin: 2vw 2vw 1vw;
 }
 
+.link {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 0.5vw;
+    width: 20vw;
+    border-radius: 2px;
+    background-color: rgba(239, 132, 115, 0.47);
+    font-family: "assistantextralight";
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: rgba(239, 132, 115, 0.76);
+}
+
 .forklaring_af_opgave {
     flex-basis: 200px;
     display: flex;
@@ -645,13 +682,18 @@ nav {
 }
 
 .opgave_info h1 {
-    font-family: "assistantextralight";
-    font-size: 1.5rem;
+    font-family: "assistantlight";
+    font-size: 1.7rem;
+    text-align-last: center
 }
 
 .opgave_info p {
     font-family: "assistantextralight";
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+.opgave_info video {
+    width: 100%;
 }
 
 
@@ -664,5 +706,14 @@ nav {
     .overskrift h1 {
         font-size: 2rem;
         margin: 1vw;
+    }
+
+    .link {
+        width: 95%;
+        margin: 2vw 1vw;
+    }
+
+    .opgave_info video {
+        width: 100%;
     }
 }

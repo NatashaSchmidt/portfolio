@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Natasha Schmidt - Portfolio</title>
+    <script src="script.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="fav_ikon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
     <div id="forside" class="hide">
-        <img src="billeder/palmer3.jpg" class="image_desktop">
-        <img src="billeder/palmer3_mobil.png" class="image_mobil">
+        <img src="billeder/palmer3.jpg" class="image_desktop" alt="image_desktop">
+        <img src="billeder/palmer3_mobil.png" class="image_mobil" alt="image_mobil">
         <div id="baggrund">
-            <img src="billeder/selvportraet.jpg">
+            <img src="billeder/selvportraet.jpg" alt="selvportraet">
             <h1>Natasha Schmidt</h1>
             <h1>Portfolio 2019</h1>
             <h1>KEA - Københavns Erhversakademi</h1>
@@ -22,7 +34,7 @@
 
     <header class="hide">
         <div id="forside_baggrund">
-            <img src="billeder/palmer3_cropped2.jpg">
+            <img src="billeder/palmer3_cropped2.jpg" alt="forside_baggrund">
         </div>
 
 
@@ -35,10 +47,10 @@
     <nav class="hide">
         <div id="forside_menu">
             <div class="projekter_knap">
-                <p1>Projekter</p1>
+                <h1>Projekter</h1>
             </div>
             <div class="om_mig_knap">
-                <p2>Om mig</p2>
+                <h2>Om mig</h2>
             </div>
         </div>
         <div id="burger_menu">
@@ -55,25 +67,25 @@
         <h1 class="valgt_side">Projekter</h1>
         <div id="vaelg_tema">
             <div class="tema">
-                <img src="billeder/desktop_swiss_style.jpg">
+                <img src="billeder/desktop_swiss_style.jpg" alt="desktop_swiss_style">
                 <div class="tema_tekst1">
                     <h1> //Grundlæggende Webdesign</h1>
                 </div>
             </div>
             <div class="tema">
-                <img src="billeder/lygten_station_favicon.jpg">
+                <img src="billeder/lygten_station_favicon.jpg" alt="lygten_station_favicon">
                 <div class="tema_tekst2">
                     <h1> //Grundlæggende Indhold</h1>
                 </div>
             </div>
             <div class="tema">
-                <img src="billeder/curlingmor_hanne_splashbillede.png">
+                <img src="billeder/curlingmor_hanne_splashbillede.png" alt="curlingmor_hanne_titelskaerm">
                 <div class="tema_tekst3">
                     <h1> //Grundlæggende Animation</h1>
                 </div>
             </div>
             <div class="tema">
-                <img src="billeder/designsprint_postits.jpg">
+                <img src="billeder/designsprint_postits.jpg" alt="design_sprint_post_its">
                 <div class="tema_tekst4">
                     <h1> //Grundlæggende UX</h1>
                 </div>
@@ -94,282 +106,301 @@
                 <p>I denne portfolio kan du læse mere om, hvilke opgaver jeg har lavet på studiet, og hvilke arbejdsmetoder jeg har benyttet mig af for at finde frem til den endelige løsning.</p>
             </div>
             <div class="om_mig_billede">
-                <img src="billeder/selvportaet2.jpeg">
+                <img src="billeder/selvportaet2.jpeg" alt="selvportraet2">
             </div>
         </div>
-        <h1>Erfaringer</h1>
+        <h1 class="valgt_side">Erfaringer</h1>
         <div class="om_mig_boks">
             <div class="om_mig_tekst2">
-                <li>
-                    <p2>Slagtøj</p2> i Københavns Kommunes Skole Orkester fra 2011 til 2014
-                </li>
-                <li>
-                    <p2>Skuespil</p2> i skolemusicalen ”SAG-Show” i både 2014 og 2015
-                </li>
-                <li>
-                    <p2>Slagtøj</p2> på Københavns Kommunes Musikskole fra 2006 til 2015
-                </li>
-                <li>
-                    <p2>Spillet guitar</p2> i 8år
-                </li>
-                <li>Deltog i <p2>”Spejling og Jeg-Støtte”-Kursus</p2> med Lars Rasborg
-                </li>
-                <li>
-                    <p2>Frivilligt arbejde</p2> for Samoa Observer gennem Projects Abroad
-                </li>
-                <li>
-                    <p2>Arrangeret støttekoncert</p2> for UNICEF i 2011
-                </li>
-                <li>
-                    <p2>Produceret Reklamefilm</p2> for EAT (Københavns Kommunes kantineordning for folkeskolerne) i 2011 og 2012
-                </li>
-
+                <ul>
+                    <li>
+                        <span class="fed">Slagtøj</span> i Københavns Kommunes Skole Orkester fra 2011 til 2014
+                    </li>
+                    <li>
+                        <span class="fed">Skuespil</span> i skolemusicalen ”SAG-Show” i både 2014 og 2015
+                    </li>
+                    <li>
+                        <span class="fed">Slagtøj</span> på Københavns Kommunes Musikskole fra 2006 til 2015
+                    </li>
+                    <li>
+                        <span class="fed">Spillet guitar</span> i 8 år
+                    </li>
+                    <li>Deltog i <span class="fed">”Spejling og Jeg-Støtte”-Kursus</span> med Lars Rasborg
+                    </li>
+                    <li>
+                        <span class="fed">Frivilligt arbejde</span> for Samoa Observer gennem Projects Abroad
+                    </li>
+                    <li>
+                        <span class="fed">Arrangeret støttekoncert</span> for UNICEF i 2011
+                    </li>
+                    <li>
+                        <span class="fed">Produceret Reklamefilm</span> for EAT (Københavns Kommunes kantineordning for folkeskolerne) i 2011 og 2012
+                    </li>
+                </ul>
             </div>
             <div class="om_mig_tekst2">
-                <li>
-                    <p2>Blogger</p2> på min egen blog siden 2010
-                </li>
-                <li>Dækket <p2>Copenhagen Comic Con 2016</p2> for Kulturbunkeren
-                </li>
-                <li>
-                    <p2>Ansvarlig</p2> for rød løber til <p2>The Voice ’17</p2> i Tivoli
-                </li>
-                <li>Dækket <p2>Guldtuben 2017</p2> for The Voice
-                </li>
-                <li>Dækket <p2>Danish Music Awards 2017</p2> for The Voice
-                </li>
-                <li>
-                    <p2>Tilrettelagt</p2> The Voice-programmet <p2>”Ida-Sophia og Nicolas”</p2>
-                </li>
-                <li>Dækket <p2>Copenhagen Comic Con 2018</p2> for Kulturbunkeren
-                </li>
-                <li>Dækket <p2>Torronto Internation Film Festival 2018</p2> for Kulturbunkeren
-                </li>
+                <ul>
+                    <li>
+                        <span class="fed">Blogger</span> på min egen blog siden 2010
+                    </li>
+                    <li>Dækket <span class="fed">Copenhagen Comic Con 2016</span> for Kulturbunkeren
+                    </li>
+                    <li>
+                        <span class="fed">Ansvarlig</span> for rød løber til <span class="fed">The Voice ’17</span> i Tivoli
+                    </li>
+                    <li>Dækket <span class="fed">Guldtuben 2017</span> for The Voice
+                    </li>
+                    <li>Dækket <span class="fed">Danish Music Awards 2017</span> for The Voice
+                    </li>
+                    <li>
+                        <span class="fed">Tilrettelagt</span> The Voice-programmet <span class="fed">”Ida-Sophia og Nicolas”</span>
+                    </li>
+                    <li>Dækket <span class="fed">Copenhagen Comic Con 2018</span> for Kulturbunkeren
+                    </li>
+                    <li>Dækket <span class="fed">Torronto Internation Film Festival 2018</span> for Kulturbunkeren
+                    </li>
+                    <li>Dækket <span class="fed">CPH:PIX 2018</span> for Kulturbunkeren
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div id="grundlæggende_webdesign" class="hide">
-        <div id="tema_webdesign">
-            <div class="overskrift">
-                <h1>Grundlæggende Webdesign</h1>
+        <div class="overskrift">
+            <h1>Grundlæggende Webdesign</h1>
+        </div>
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>01.04.02 - responsive_site_v2</h1>
+
+                <div class="link"><a href="http://noregrets.dk/kea/01-web/04-responsive/01_04_02_responsive_v2/" target="_blank">Link til aflevering</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
             </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
+            <div class="opgave_info">
+                <h1>Process</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Kompetence</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
             </div>
         </div>
     </div>
 
     <div id="grundlæggende_indhold" class="hide">
-        <div id="tema_indhold">
-            <div class="overskrift">
-                <h1>Grundlæggende Indhold</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
 
-            <div class="overskrift">
-                <h1>Grundlæggende Indhold</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
+        <div class="overskrift">
+            <h1>Grundlæggende Indhold</h1>
         </div>
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>02.01.01 Pilotopgave.</h1>
+
+                <video poster="Opgaver%20/livet_som_filmanmelder.00_00_33_12.Still001.png" controls>
+                    <source src="Opgaver%20/livet_som_filmanmelder_komprimeret.mp4">
+                </video>
+
+                <!--- <div class="link"><a href="https://www.youtube.com/watch?v=-iiKFX4YImA" target="_blank">Link til video</a>
+                </div> --->
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>02.02.01 - 02.02.06 redesign af website</h1>
+
+                <div class="link"><a href="http://noregrets.dk/kea/02-content/02-redesign/02_02_06_redesign/" target="_blank">Link til redesign</a>
+                </div>
+
+
+                <div class="link"><a href="http://noregrets.dk/kea/02-content/02-redesign/02_02_05_dokumentationssite/dokumentationssite.html" target="_blank">Link til dokumentationssite</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+
     </div>
 
     <div id="grundlæggende_animation" class="hide">
-        <div id="tema_indhold">
-            <div class="overskrift">
-                <h1>Grundlæggende Animation</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
 
-            <div class="overskrift">
-                <h1>Grundlæggende Animation</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
-            <div class="overskrift">
-                <h1>Grundlæggende Animation</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
+        <div class="overskrift">
+            <h1>Grundlæggende Animation</h1>
         </div>
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>03.01.04 - Link til scene, samt udvidet style tile</h1>
+
+                <div class="link"><a href="Opgaver%20/03.01.04_style_tile.pdf" target="_blank">Link til style tile</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>03.03.03 - Animations-opgaven</h1>
+
+                <div class="link"><a href="http://noregrets.dk/kea/03-animation/spil/" target="_blank">Link til eget spil</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>03.05.01 - Projekt: Sex & Samfund</h1>
+
+                <div class="link"><a href="http://noregrets.dk/kea/03-animation/spil_sex_og_samfund/" target="_blank">Link til spil</a>
+                </div>
+
+                <div class="link"><a href="http://noregrets.dk/kea/03-animation/03_05_01_Gruppe-11_dokumentationssite/" target="_blank">Link til dokumentationssite</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+
     </div>
 
     <div id="grundlæggende_UX" class="hide">
-        <div id="tema_indhold">
-            <div class="overskrift">
-                <h1>Grundlæggende UX</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
 
-            <div class="overskrift">
-                <h1>Grundlæggende UX</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
-            <div class="overskrift">
-                <h1>Grundlæggende UX</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
-            <div class="overskrift">
-                <h1>Grundlæggende UX</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
-            <div class="overskrift">
-                <h1>Grundlæggende UX</h1>
-            </div>
-            <div class="forklaring_af_opgave">
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-                <div class="opgave_info">
-                    <h1>Overskrift</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
-                </div>
-            </div>
-
+        <div class="overskrift">
+            <h1>Grundlæggende UX</h1>
         </div>
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>04.02.01 – Design Sprint</h1>
+
+                <div class="link"><a href="Opgaver%20/04_02_01_design_sprint_prototype_link_Natashaschmidt.pdf" target="_blank">Link til aflevering</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>04.03.01 – Web prototype</h1>
+
+                <div class="link"><a href="Opgaver%20/04_03_01_web_prototype_NatashaSchmidt.pdf" target="_blank">Link til aflevering</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>04.04.01 – Design Sprint: Native App</h1>
+
+                <div class="link"><a href="Opgaver%20/04_04_01_native_app_Natasha_Schmidt.pdf" target="_blank">Link til aflevering</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+        <div class="forklaring_af_opgave">
+            <div class="opgave_info">
+                <h1>04.04.02 – Temadokumentation</h1>
+
+                <div class="link"><a href="Opgaver%20/04_04_02_temadokumentation_NatashaSchmidt.pdf" target="_blank">Link til aflevering</a>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+            <div class="opgave_info">
+                <h1>Overskrift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatum aut ipsam aliquid pariatur obcaecati in eveniet alias. Architecto natus deserunt vitae possimus beatae laboriosam hic accusantium veritatis, error placeat.</p>
+            </div>
+        </div>
+
+
     </div>
 
     <button onclick="topFunction()" id="myBtn">Gå til top</button>
 </body>
 
 
-<script src="script.js"></script>
+
 
 </html>

@@ -23,28 +23,6 @@ function SidenVises() {
 }
 
 
-function toggleMenu() {
-    console.log("toggleMenu");
-    document.querySelector("#menu").classList.toggle("hidden");
-
-    let erSkjult =
-        document.querySelector("#menu").classList.contains("hidden");
-
-
-    if (erSkjult == true) {
-        document.querySelector("#burgermenu").textContent = "☰";
-        //hvis menuen er skjult = ændre menuknapt til tre streger
-
-
-    } else {
-        //hvis menuen er vist = ændre menuknapt til X
-        document.querySelector("#burgermenu").textContent = "☓";
-
-
-    }
-
-}
-
 window.onscroll = function () {
     scrollFunction()
 };
@@ -205,7 +183,27 @@ function VisOmMig() {
     document.querySelector("#om_mig").classList.remove("fade_in");
     document.querySelector("#om_mig").removeEventListener("animationend", VisOmMig);
 
-    //NYT
+
+}
+
+function toggleMenu() {
+    console.log("toggleMenu");
+    document.querySelector("#menu").classList.toggle("hidden");
+
+    let erSkjult =
+        document.querySelector("#menu").classList.contains("hidden");
+
+
+    if (erSkjult == true) {
+        document.querySelector("#burgermenu").textContent = "☰";
+        //hvis menuen er skjult = ændre menuknap til tre streger
+
+
+    } else {
+        //hvis menuen er vist = ændre menuknap til X
+        document.querySelector("#burgermenu").textContent = "☓";
+
+    }
 
 
 }
