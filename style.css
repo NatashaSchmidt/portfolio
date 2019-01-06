@@ -297,7 +297,12 @@ header {
     margin: 0;
 }
 
-.forside_knap {
+.forside_knap,
+.forside_knap1,
+.projekter_knap,
+.projekter_knap1,
+.om_mig_knap,
+.om_mig_knap1 {
     cursor: pointer;
 }
 
@@ -330,9 +335,6 @@ nav {
     transform: scale(1.05);
 }
 
-.projekter_knap {
-    cursor: pointer;
-}
 
 #forside_menu h2 {
     position: absolute;
@@ -349,13 +351,9 @@ nav {
     transform: scale(1.05);
 }
 
-.om_mig_knap {
-    cursor: pointer;
-}
-
 .hidden {
-    transform: translateX(115%);
-    /*   ELLER opacity: 0;*/
+/*    transform: translateX(115%);*/
+    opacity: 0;
 }
 
 #burger_menu {
@@ -375,17 +373,39 @@ nav {
     position: absolute;
     left: 65vw;
 */
-
+    position: relative;
     text-align: right;
     list-style-type: none;
-    transition: transform 1s;
+/*   ELLER transition: transform 1s;*/
     font-family: "de_valenciaregular";
     font-size: 6vw;
     color: #4162FC;
     background-color: rgba(255, 255, 255, 0.89);
     border-radius: 0.5vw;
-    /*  ELLER  transition: opacity 0.5s;*/
+    transition: opacity 0.5s;
 }
+
+/* ELLER
+.forside_knap1 {
+    position: absolute;
+    left: 72vw;
+    top: -6vw;
+
+}
+
+.om_mig_knap1 {
+    position: absolute;
+    left: 76vw;
+    top: 1.5vw;
+}
+
+.projekter_knap1 {
+    position: absolute;
+    left: 64.5vw;
+    top: 9vw;
+
+}
+*/
 
 #menu li:hover {
     color: #6C54A6;
@@ -521,6 +541,10 @@ nav {
 
 @media only screen and (max-width:628px) {
 
+    #projekter {
+        margin-top: -13vw;
+    }
+
     #projekter h1 {
         font-size: 2rem;
         margin: 0vw;
@@ -542,7 +566,7 @@ nav {
 
 
 
-/*
+/* ELLER
 #om_mig h1 {
     font-family: "de_valenciaregular";
     font-size: 3vw;
@@ -604,6 +628,10 @@ nav {
 
 @media only screen and (max-width:628px) {
 
+
+    #om_mig {
+        margin-top: -13vw;
+    }
 
     #om_mig h1 {
 
@@ -715,5 +743,21 @@ nav {
 
     .opgave_info video {
         width: 100%;
+    }
+
+    #grundlæggende_webdesign {
+        margin-top: -13vw;
+    }
+
+    #grundlæggende_indhold {
+        margin-top: -13vw;
+    }
+
+    #grundlæggende_animation {
+        margin-top: -13vw;
+    }
+
+    #grundlæggende_UX {
+        margin-top: -13vw;
     }
 }

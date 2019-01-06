@@ -78,6 +78,8 @@ function ProjekterVises() {
 
     document.querySelector("#projekter").classList.remove("hide");
 
+    toggleMenu();
+
 }
 
 
@@ -111,6 +113,7 @@ function GrundlæggendeWebdesignVises() {
 
     //NYT
     document.querySelector("#grundlæggende_webdesign").classList.remove("hide");
+
 
 }
 
@@ -152,6 +155,7 @@ function GrundlæggendeUXVises() {
 
     //NYT
     document.querySelector("#grundlæggende_UX").classList.remove("hide");
+
 }
 
 
@@ -174,6 +178,8 @@ function OmMigVises() {
     document.querySelector("#om_mig").classList.add("fade_in");
     document.querySelector("#om_mig").addEventListener("animationend", VisOmMig);
 
+    toggleMenu();
+
 }
 
 function VisOmMig() {
@@ -189,6 +195,10 @@ function VisOmMig() {
 function toggleMenu() {
     console.log("toggleMenu");
     document.querySelector("#menu").classList.toggle("hidden");
+
+    document.querySelector(".forside_knap1").addEventListener("click", SidenVises);
+    document.querySelector(".projekter_knap1").addEventListener("click", ProjekterVises);
+    document.querySelector(".om_mig_knap1").addEventListener("click", OmMigVises);
 
     let erSkjult =
         document.querySelector("#menu").classList.contains("hidden");
