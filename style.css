@@ -228,7 +228,7 @@ body {
     }
 
     #baggrund h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         top: 27vw;
         height: 13vw;
         text-align: center;
@@ -352,7 +352,7 @@ nav {
 }
 
 .hidden {
-/*    transform: translateX(115%);*/
+    /*    transform: translateX(115%);*/
     opacity: 0;
 }
 
@@ -376,7 +376,7 @@ nav {
     position: relative;
     text-align: right;
     list-style-type: none;
-/*   ELLER transition: transform 1s;*/
+    /*   ELLER transition: transform 1s;*/
     font-family: "de_valenciaregular";
     font-size: 6vw;
     color: #4162FC;
@@ -636,7 +636,7 @@ nav {
     #om_mig h1 {
 
         font-size: 2rem;
-        margin: 0vw;
+        margin: 0vw 1vw;
     }
 
     .om_mig_boks {
@@ -706,6 +706,7 @@ nav {
 
 .opgave_info {
     flex-grow: 1;
+    flex-basis: 300px;
     margin: 2vw 1vw 1vw;
 }
 
@@ -745,19 +746,19 @@ nav {
         width: 100%;
     }
 
-    #grundlæggende_webdesign {
+    #grundlaeggende_webdesign {
         margin-top: -13vw;
     }
 
-    #grundlæggende_indhold {
+    #grundlaeggende_indhold {
         margin-top: -13vw;
     }
 
-    #grundlæggende_animation {
+    #grundlaeggende_animation {
         margin-top: -13vw;
     }
 
-    #grundlæggende_UX {
+    #grundlaeggende_UX {
         margin-top: -13vw;
     }
 }

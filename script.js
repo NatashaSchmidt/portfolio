@@ -8,10 +8,10 @@ function SidenVises() {
     document.querySelector("nav").classList.add("hide");
     document.querySelector("#projekter").classList.add("hide");
     document.querySelector("#om_mig").classList.add("hide");
-    document.querySelector("#grundlæggende_webdesign").classList.add("hide");
-    document.querySelector("#grundlæggende_indhold").classList.add("hide");
-    document.querySelector("#grundlæggende_animation").classList.add("hide");
-    document.querySelector("#grundlæggende_UX").classList.add("hide");
+    document.querySelector("#grundlaeggende_webdesign").classList.add("hide");
+    document.querySelector("#grundlaeggende_indhold").classList.add("hide");
+    document.querySelector("#grundlaeggende_animation").classList.add("hide");
+    document.querySelector("#grundlaeggende_UX").classList.add("hide");
 
 
     //NYT
@@ -63,10 +63,10 @@ function ProjekterVises() {
     document.querySelector("#forside").removeEventListener("animationend", VisProjekter);
 
     document.querySelector("#om_mig").classList.add("hide");
-    document.querySelector("#grundlæggende_webdesign").classList.add("hide");
-    document.querySelector("#grundlæggende_indhold").classList.add("hide");
-    document.querySelector("#grundlæggende_animation").classList.add("hide");
-    document.querySelector("#grundlæggende_UX").classList.add("hide");
+    document.querySelector("#grundlaeggende_webdesign").classList.add("hide");
+    document.querySelector("#grundlaeggende_indhold").classList.add("hide");
+    document.querySelector("#grundlaeggende_animation").classList.add("hide");
+    document.querySelector("#grundlaeggende_UX").classList.add("hide");
 
     // NYT
     document.querySelector("#projekter").classList.add("fade_in");
@@ -94,68 +94,68 @@ function VisProjekter() {
     document.querySelector(".forside_knap").addEventListener("click", SidenVises);
     document.querySelector(".projekter_knap").addEventListener("click", ProjekterVises);
     document.querySelector(".om_mig_knap").addEventListener("click", OmMigVises);
-    document.querySelector(".tema_tekst1").addEventListener("click", GrundlæggendeWebdesignVises);
-    document.querySelector(".tema_tekst2").addEventListener("click", GrundlæggendeIndholdVises);
-    document.querySelector(".tema_tekst3").addEventListener("click", GrundlæggendeAnimationVises);
-    document.querySelector(".tema_tekst4").addEventListener("click", GrundlæggendeUXVises);
+    document.querySelector(".tema_tekst1").addEventListener("click", GrundlaeggendeWebdesignVises);
+    document.querySelector(".tema_tekst2").addEventListener("click", GrundlaeggendeIndholdVises);
+    document.querySelector(".tema_tekst3").addEventListener("click", GrundlaeggendeAnimationVises);
+    document.querySelector(".tema_tekst4").addEventListener("click", GrundlaeggendeUXVises);
 
 
 }
 
-function GrundlæggendeWebdesignVises() {
-    console.log("GrundlæggendeWebdesignVises");
+function GrundlaeggendeWebdesignVises() {
+    console.log("GrundlaeggendeWebdesignVises");
 
     //RYD OP
     document.querySelector("#projekter").classList.add("hide");
 
     document.querySelector("#projekter").classList.remove("fade_out");
-    document.querySelector(".tema_tekst1").removeEventListener("click", GrundlæggendeWebdesignVises);
+    document.querySelector(".tema_tekst1").removeEventListener("click", GrundlaeggendeWebdesignVises);
 
     //NYT
-    document.querySelector("#grundlæggende_webdesign").classList.remove("hide");
-
-
+    document.querySelector("#grundlaeggende_webdesign").classList.remove("hide");
+    topFunction();
 }
 
-function GrundlæggendeIndholdVises() {
-    console.log("GrundlæggendeIndholdVises");
+function GrundlaeggendeIndholdVises() {
+    console.log("GrundlaeggendeIndholdVises");
 
     //RYD OP
     document.querySelector("#projekter").classList.add("hide");
 
     document.querySelector("#projekter").classList.remove("fade_out");
-    document.querySelector(".tema_tekst2").removeEventListener("click", GrundlæggendeIndholdVises);
+    document.querySelector(".tema_tekst2").removeEventListener("click", GrundlaeggendeIndholdVises);
 
     //NYT
-    document.querySelector("#grundlæggende_indhold").classList.remove("hide");
-
+    document.querySelector("#grundlaeggende_indhold").classList.remove("hide");
+    topFunction();
 }
 
-function GrundlæggendeAnimationVises() {
-    console.log("GrundlæggendeAnimationVises");
+function GrundlaeggendeAnimationVises() {
+    console.log("GrundlaeggendeAnimationVises");
 
     //RYD OP
     document.querySelector("#projekter").classList.add("hide");
 
     document.querySelector("#projekter").classList.remove("fade_out");
-    document.querySelector(".tema_tekst3").removeEventListener("click", GrundlæggendeAnimationVises);
+    document.querySelector(".tema_tekst3").removeEventListener("click", GrundlaeggendeAnimationVises);
 
     //NYT
-    document.querySelector("#grundlæggende_animation").classList.remove("hide");
+    document.querySelector("#grundlaeggende_animation").classList.remove("hide");
+    topFunction();
 }
 
-function GrundlæggendeUXVises() {
-    console.log("GrundlæggendeAnimationVises");
+function GrundlaeggendeUXVises() {
+    console.log("GrundlaeggendeAnimationVises");
 
     //RYD OP
     document.querySelector("#projekter").classList.add("hide");
 
     document.querySelector("#projekter").classList.remove("fade_out");
-    document.querySelector(".tema_tekst4").removeEventListener("click", GrundlæggendeAnimationVises);
+    document.querySelector(".tema_tekst4").removeEventListener("click", GrundlaeggendeAnimationVises);
 
     //NYT
-    document.querySelector("#grundlæggende_UX").classList.remove("hide");
-
+    document.querySelector("#grundlaeggende_UX").classList.remove("hide");
+    topFunction();
 }
 
 
@@ -163,10 +163,10 @@ function OmMigVises() {
     console.log("OmMigVises");
 
     //RYD OP
-    document.querySelector("#grundlæggende_webdesign").classList.add("hide");
-    document.querySelector("#grundlæggende_indhold").classList.add("hide");
-    document.querySelector("#grundlæggende_animation").classList.add("hide");
-    document.querySelector("#grundlæggende_UX").classList.add("hide");
+    document.querySelector("#grundlaeggende_webdesign").classList.add("hide");
+    document.querySelector("#grundlaeggende_indhold").classList.add("hide");
+    document.querySelector("#grundlaeggende_animation").classList.add("hide");
+    document.querySelector("#grundlaeggende_UX").classList.add("hide");
     document.querySelector("#projekter").classList.add("hide");
 
     document.querySelector("#projekter").classList.remove("fade_out");
@@ -179,6 +179,7 @@ function OmMigVises() {
     document.querySelector("#om_mig").addEventListener("animationend", VisOmMig);
 
     toggleMenu();
+    topFunction();
 
 }
 
@@ -196,9 +197,6 @@ function toggleMenu() {
     console.log("toggleMenu");
     document.querySelector("#menu").classList.toggle("hidden");
 
-    document.querySelector(".forside_knap1").addEventListener("click", SidenVises);
-    document.querySelector(".projekter_knap1").addEventListener("click", ProjekterVises);
-    document.querySelector(".om_mig_knap1").addEventListener("click", OmMigVises);
 
     let erSkjult =
         document.querySelector("#menu").classList.contains("hidden");
@@ -208,10 +206,17 @@ function toggleMenu() {
         document.querySelector("#burgermenu").textContent = "☰";
         //hvis menuen er skjult = ændre menuknap til tre streger
 
+        document.querySelector(".forside_knap1").removeEventListener("click", SidenVises);
+        document.querySelector(".projekter_knap1").removeEventListener("click", ProjekterVises);
+        document.querySelector(".om_mig_knap1").removeEventListener("click", OmMigVises);
 
     } else {
         //hvis menuen er vist = ændre menuknap til X
         document.querySelector("#burgermenu").textContent = "☓";
+
+        document.querySelector(".forside_knap1").addEventListener("click", SidenVises);
+        document.querySelector(".projekter_knap1").addEventListener("click", ProjekterVises);
+        document.querySelector(".om_mig_knap1").addEventListener("click", OmMigVises);
 
     }
 
