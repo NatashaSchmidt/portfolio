@@ -558,7 +558,7 @@ nav {
 
     .tema {
         margin: 2vw 2vw;
-        flex-basis: 172px;
+        flex-basis: 142px;
     }
 }
 
@@ -612,6 +612,11 @@ nav {
 
 .fed {
     font-family: "assistantsemibold";
+}
+
+.kursiv {
+    font-family: "assistantextralight";
+    font-style: italic;
 }
 
 .om_mig_billede {
@@ -696,6 +701,15 @@ nav {
 
 .link:hover {
     background-color: rgba(239, 132, 115, 0.76);
+}
+
+.billede_fra_forlob {
+    width: 100%;
+    margin: 1vw auto;
+}
+
+.billede_fra_forlob img {
+    width: 100%;
 }
 
 .forklaring_af_opgave {
