@@ -20,7 +20,6 @@ body {
 
 #myBtn:hover {
     background-color: rgba(239, 132, 115, 0.76);
-    /* Add a dark-grey background on hover */
 }
 
 @media only screen and (max-width:628px) {
@@ -40,30 +39,6 @@ body {
     font-style: normal;
 
 }
-
-
-@font-face {
-    font-family: 'assistantbold';
-    src: url('font/assistant-bold-webfont.woff2') format('woff2'),
-        url('font/assistant-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-
-@font-face {
-    font-family: 'assistantextrabold';
-    src: url('font/assistant-extrabold-webfont.woff2') format('woff2'),
-        url('font/assistant-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 
 
 
@@ -87,19 +62,6 @@ body {
     font-style: normal;
 
 }
-
-
-
-
-@font-face {
-    font-family: 'assistantregular';
-    src: url('font/assistant-regular-webfont.woff2') format('woff2'),
-        url('font/assistant-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 
 
 
@@ -162,7 +124,6 @@ body {
 /*---- FORSIDE -----*/
 
 #forside {
-    /*    margin: 1vw 10vw 0;*/
     position: absolute;
 }
 
@@ -180,7 +141,6 @@ body {
     background-color: rgba(142, 136, 136, 0.71);
     border: solid #6C54A6 0.3vw;
     cursor: ne-resize;
-    /* ELLER cursor: pointer;*/
 }
 
 #baggrund img {
@@ -198,7 +158,6 @@ body {
     font-size: 4vw;
     color: white;
     font-family: "de_valenciaregular";
-    /*    ELLER font-family: assistantextralight;*/
     font-weight: 300;
 }
 
@@ -258,19 +217,6 @@ header {
     opacity: 0.85;
 }
 
-/* ELLER #portraet {
-    width: 15vw;
-    height: 15vw;
-    position: absolute;
-    top: 10vw;
-    left: 42.56vw;
-
-}
-
-#portraet img {
-    width: 100%;
-    border-radius: 0.5vw;
-} */
 
 #portraet {
     cursor: pointer;
@@ -352,7 +298,6 @@ nav {
 }
 
 .hidden {
-    /*    transform: translateX(115%);*/
     opacity: 0;
 }
 
@@ -365,18 +310,12 @@ nav {
     justify-content: flex-end;
     font-size: 3rem;
     color: #4162FC;
-    /*   ELLER transform: rotate(90deg);*/
 }
 
 #menu {
-    /* ELLER
-    position: absolute;
-    left: 65vw;
-*/
     position: relative;
     text-align: right;
     list-style-type: none;
-    /*   ELLER transition: transform 1s;*/
     font-family: "de_valenciaregular";
     font-size: 6vw;
     color: #4162FC;
@@ -385,36 +324,10 @@ nav {
     transition: opacity 0.5s;
 }
 
-/* ELLER
-.forside_knap1 {
-    position: absolute;
-    left: 72vw;
-    top: -6vw;
-
-}
-
-.om_mig_knap1 {
-    position: absolute;
-    left: 76vw;
-    top: 1.5vw;
-}
-
-.projekter_knap1 {
-    position: absolute;
-    left: 64.5vw;
-    top: 9vw;
-
-}
-*/
-
 #menu li:hover {
     color: #6C54A6;
     transition: transform 0.5s;
     transform: scale(1.05);
-}
-
-#menu li {
-    /*     ELLER position: relative;*/
 }
 
 
@@ -565,16 +478,6 @@ nav {
 /*---- OM MIG ----*/
 
 
-
-/* ELLER
-#om_mig h1 {
-    font-family: "de_valenciaregular";
-    font-size: 3vw;
-    text-decoration: overline;
-    margin: 2vw 2vw 1vw;
-}
-*/
-
 .valgt_side {
     font-family: "de_valenciaregular";
     font-size: 3vw;
@@ -710,6 +613,17 @@ nav {
 
 .billede_fra_forlob img {
     width: 100%;
+}
+
+.billede_fra_forlob_mobil {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw 0vw;
+}
+
+.billede_fra_forlob_mobil img {
+    width: 50%;
 }
 
 .forklaring_af_opgave {
